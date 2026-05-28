@@ -5,6 +5,14 @@ import { CustomersListPage } from '../../../src/pages/manager/CustomersListPage.
 
 
 test.beforeEach(async ({ page }) => {
+  /* 
+  Pre-conditons:
+  1. Open Add Customer page.
+  2. Fill the First Name.  
+  3. Fill the Last Name.
+  4. Fill the Postal Code.
+  5. Click [Add Customer].
+  */
 
     const customerPage = new AddCustomerPage(page);
     await customerPage.open();
