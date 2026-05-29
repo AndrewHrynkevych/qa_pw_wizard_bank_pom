@@ -33,7 +33,6 @@ test('Assert manager can add new customer', async ({ page }) => {
   await accountPage.selectCurrencyDollar();
   await accountPage.clickProcess();
   await accountPage.reloadPage();
-
   // Go to customers list and assert account number is not empty
   const customersListPage = new CustomersListPage(page);
   await customersListPage.open();

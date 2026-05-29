@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { OpenAccountPage } from '../../../src/pages/manager/OpenAccountPage.js';
 
 test('Assert manager can choose currencies for account', async ({ page }) => {
